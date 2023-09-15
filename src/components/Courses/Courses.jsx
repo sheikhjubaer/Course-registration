@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import Course from '../Course/Course';
 
-const Courses = ({ handleCart }) => {
+const Courses = ({handleCart}) => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
@@ -23,5 +24,8 @@ const Courses = ({ handleCart }) => {
     );
 };
 
+Courses.propTypes = {
+    handleCart: PropTypes.object.isRequired
+};
 
 export default Courses;

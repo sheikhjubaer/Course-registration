@@ -2,10 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
 import Courses from './components/Courses/Courses'
-import Carts from './components/Carts/Carts';
+import Carts from './components/Carts/Carts'
 
 function App() {
-
+  
   // Declaring State for handling Carts
   const [carts, setCarts] = useState([]);
 

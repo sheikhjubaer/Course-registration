@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -62,6 +63,10 @@ const Carts = ({ carts }) => {
       <ToastContainer /> {/* To render the toast notifications */}
     </div>
   );
+};
+
+Carts.propTypes = {
+    carts: PropTypes.object.isRequired
 };
 
 export default Carts;

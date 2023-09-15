@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { FaBookOpen } from 'react-icons/fa';
 import { toast } from 'react-toastify'; // Import the toast function
@@ -89,6 +90,11 @@ const Course = ({ course, handleCart }) => {
       </button>
     </div>
   );
+};
+
+Course.propTypes = {
+  course: PropTypes.object.isRequired,
+  handleCart: PropTypes.func.isRequired,
 };
 
 export default Course;
